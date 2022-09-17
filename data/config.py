@@ -7,7 +7,7 @@ load_dotenv()
 BOT_TOKEN = str(os.getenv("BOT_TOKEN"))
 
 admins_id = [
-    -651787424
+    -1001668232300
 ]
 
 clients_id = []
