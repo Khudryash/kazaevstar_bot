@@ -15,5 +15,5 @@ async def set_default_commands(dp):
         [
             types.BotCommand('error', 'Ошибка'),
         ],
-        scope=types.bot_command_scope.BotCommandScopeChat(chat_id=-651787424)
+        scope=types.bot_command_scope.BotCommandScopeChat(chat_id=-1001668232300)
     )
