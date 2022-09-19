@@ -72,7 +72,7 @@ async def not_photo(message: types.Message):
 
 @dp.message_handler(lambda message: not "".join(message.text.split(' ')).isdigit(), state=Proofs.card)
 async def process_card_invalid(message: types.Message):
-    await message.reply("!!!Номер карты или телефона должен содержать толко цифры!!!")
+    await message.reply("!!!Номер карты или телефона должен содержать только цифры!!!")
 
 
 @dp.message_handler(lambda message: "".join(message.text.split(' ')).isdigit(), state=Proofs.card)
