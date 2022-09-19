@@ -11,7 +11,7 @@ async def error_report(message: types.Message):
     try:
         if 'status: done' not in message.reply_to_message.caption:
             msg = message.reply_to_message
-            if msg.from_user.username != "goldfaceshop_bot":
+            if msg.from_user.username != "kazaev_bot":
                 await message.answer('Вместе с этой командой необходимо прислать сообщение от бота')
             else:
                 client = msg.caption.split('client: ')[1].split('status:')[0]
