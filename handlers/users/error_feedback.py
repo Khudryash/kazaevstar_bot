@@ -39,7 +39,7 @@ async def send_fucking_report(call: types.CallbackQuery):
         client_id = re.search('II(.+?)II', call.message.text.split("message: ")[0]).group(1)
         await bot.send_message(
             chat_id=client_id,
-            text=call.message.text.split('message: ')[1] + 'Используй команду /restart, чтобы попробовать снова'
+            text=call.message.text.split('message: ')[1] + '\nИспользуй команду /restart, чтобы попробовать снова'
         )
     except AttributeError:
         await bot.send_message(
